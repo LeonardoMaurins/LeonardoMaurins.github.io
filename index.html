@@ -5,25 +5,29 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>B00107064 Avatar Project</title>
     <!-- As a heading -->
-    <nav class="navbar navbar-light bg-light justify-content-center"><span class="navbar-brand mb-0 h1">Irish Sign
-            Language Avatar Translation</span></nav>
+    <nav class="navbar navbar-light bg-light justify-content-center"><span class="navbar-brand mb-0 h1">Irish Sign Language Avatar Translation</span></nav>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-    <link type="text/css" rel="stylesheet" href="B00107064_Avatar_Project.min.css?v=21032021142517">
-    <script type="text/javascript" src="./b4w.simple.min.js?v=21032021142517"></script>
-    <script type="text/javascript" src="B00107064_Avatar_Project.min.js?v=21032021142517"></script>
+    <link type="text/css" rel="stylesheet" href="B00107064_Avatar_Project.min.css?v=11042021214126">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./b4w.simple.min.js?v=11042021214126"></script>
+    <script type="text/javascript" src="B00107064_Avatar_Project.min.js?v=11042021214126"></script>
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-2"></div>
-            <div class="text-center col-md-2.5 box"><label for="category">Category:</label>
+            <div class="text-center col-md-2.5 box">
+                <label for="category">Category:</label>
                 <select id="category" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                     <option selected>Select a category</option>
                     <option value="category1">Alphabet</option>
                     <option value="category2">Family</option>
-                </select>
+                    <option value="category3">Conversation</option>
+                    <option value="category4">Input</option></select>
                 <div id="category1" class="group">
                     <div id='letters' class="letters">
                         <button id="A" class="btn btn-dark">A</button>
@@ -31,36 +35,80 @@
                         <button id="C" class="btn btn-dark">C</button>
                         <button id="D" class="btn btn-dark">D</button>
                         <button id="E" class="btn btn-dark">E</button>
-                        <button id="F" class="btn btn-dark">F</button>
-                        <button id="G" class="btn btn-dark">G</button><br><br>
+                        <button id="F" class="btn btn-secondary">F</button>
+                        <button id="G" class="btn btn-secondary">G</button><br><br>
                         <button id="H" class="btn btn-dark">H</button>
                         <button id="I" class="btn btn-dark">I</button>
-                        <button id="J" class="btn btn-dark">J</button>
-                        <button id="K" class="btn btn-dark">K</button>
-                        <button id="L" class="btn btn-dark">L</button>
-                        <button id="M" class="btn btn-dark">M</button>
-                        <button id="N" class="btn btn-dark">N</button><br><br>
-                        <button id="O" class="btn btn-dark">O</button>
-                        <button id="P" class="btn btn-dark">P</button>
-                        <button id="Q" class="btn btn-dark">Q</button>
-                        <button id="R" class="btn btn-dark">R</button>
-                        <button id="S" class="btn btn-dark">S</button>
-                        <button id="T" class="btn btn-dark">T</button><br><br>
-                        <button id="U" class="btn btn-dark">U</button>
-                        <button id="V" class="btn btn-dark">V</button>
-                        <button id="W" class="btn btn-dark">W</button>
-                        <button id="X" class="btn btn-dark">X</button>
-                        <button id="Y" class="btn btn-dark">Y</button>
-                        <button id="Z" class="btn btn-dark">Z</button><br><br>
-                    </div>
+                        <button id="J" class="btn btn-secondary">J</button>
+                        <button id="K" class="btn btn-secondary">K</button>
+                        <button id="L" class="btn btn-secondary">L</button>
+                        <button id="M" class="btn btn-secondary">M</button>
+                        <button id="N" class="btn btn-secondary">N</button><br><br>
+                        <button id="O" class="btn btn-secondary">O</button>
+                        <button id="P" class="btn btn-secondary">P</button>
+                        <button id="Q" class="btn btn-secondary">Q</button>
+                        <button id="R" class="btn btn-secondary">R</button>
+                        <button id="S" class="btn btn-secondary">S</button>
+                        <button id="T" class="btn btn-secondary">T</button><br><br>
+                        <button id="U" class="btn btn-secondary">U</button>
+                        <button id="V" class="btn btn-secondary">V</button>
+                        <button id="W" class="btn btn-secondary">W</button>
+                        <button id="X" class="btn btn-secondary">X</button>
+                        <button id="Y" class="btn btn-secondary">Y</button>
+                        <button id="Z" class="btn btn-secondary">Z</button><br><br></div>
                 </div>
                 <div id="category2" class="group">
                     <div class="btn-group-vertical btn btn-default d-flex p-2">
-                        <button id="button_Father" class="btn btn-dark">Father</button><br>
-                        <button id="button_Mother" class="btn btn-dark">Mother</button><br></div>
+                        <button id="button_Father" class="btn btn-dark">Father</button>
+                        <br><button id="button_Mother" class="btn btn-dark">Mother</button><br>
+                    </div>
                 </div>
-                <div class="justify-content-center"><label for="selection">Phrase Selected:</label>
-                    <input type="text" id="selection" name="selection" value="Select a phrase" readonly><br><br>
+                <div id="category3" class="group">
+                    <div class="btn-group-vertical btn btn-default d-flex p-2">
+                        <button id="button_Hello" class="btn btn-dark">Hello</button><br>
+                        <button id="button_Please" class="btn btn-dark">Please</button><br>
+                        <button id="button_Sorry" class="btn btn-dark">Sorry</button><br>
+                        <button id="button_Thanks" class="btn btn-dark">Thanks</button><br>
+                    </div>
+                </div>
+                <div id="category4" class="group">
+                    <div class="btn-group-vertical btn btn-default d-flex p-2">
+                        <div id='letters2' class="letters2">
+                            <button id="A" class="btn btn-dark">A</button>
+                            <button id="B" class="btn btn-dark">B</button>
+                            <button id="C" class="btn btn-dark">C</button>
+                            <button id="D" class="btn btn-dark">D</button>
+                            <button id="E" class="btn btn-dark">E</button>
+                            <button id="F" class="btn btn-secondary">F</button>
+                            <button id="G" class="btn btn-secondary">G</button><br><br>
+                            <button id="H" class="btn btn-dark">H</button>
+                            <button id="I" class="btn btn-dark">I</button>
+                            <button id="J" class="btn btn-secondary">J</button>
+                            <button id="K" class="btn btn-secondary">K</button>
+                            <button id="L" class="btn btn-secondary">L</button>
+                            <button id="M" class="btn btn-secondary">M</button>
+                            <button id="N" class="btn btn-secondary">N</button><br><br>
+                            <button id="O" class="btn btn-secondary">O</button>
+                            <button id="P" class="btn btn-secondary">P</button>
+                            <button id="Q" class="btn btn-secondary">Q</button>
+                            <button id="R" class="btn btn-secondary">R</button>
+                            <button id="S" class="btn btn-secondary">S</button>
+                            <button id="T" class="btn btn-secondary">T</button><br><br>
+                            <button id="U" class="btn btn-secondary">U</button>
+                            <button id="V" class="btn btn-secondary">V</button>
+                            <button id="W" class="btn btn-secondary">W</button>
+                            <button id="X" class="btn btn-secondary">X</button>
+                            <button id="Y" class="btn btn-secondary">Y</button>
+                            <button id="Z" class="btn btn-secondary">Z</button><br><br></div>
+                        <div class="justify-content-center">
+                            <label for="input">Letter(s):</label>
+                            <input type="text" id="input" name="input" hint="Awaiting Input" maxlength="7"><br><br>
+                            <button id="button_Input" class="btn btn-dark">Input</button>
+                            <button id="button_Reset" class="btn btn-dark">Reset</button><br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="justify-content-center">
                     <label for="button_Mirror">Dominant hand:</label>
                     <button id="button_Mirror" class="btn btn-dark" value="Right">Right</button><br><br>
                     <button id="button_Translate" class="btn btn-dark">Translate</button><br>
@@ -70,13 +118,12 @@
             <div class="text-center col-md-6 box">
                 <div class="col-md-12 justify-content-center">
                     <div id="main_canvas_container"></div>
+                    <label for="selection">Phrase Selected:</label>
+                    <input type="text" id="selection" name="selection" value="Select a phrase" readonly><br><br>
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
