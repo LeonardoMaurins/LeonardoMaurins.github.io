@@ -45,7 +45,7 @@ $('#navbarNav a').click(function(e) {
 $(document).ready(function() {
     $('input').bind('keypress', function(evt) {
         var key = String.fromCharCode(evt.which || evt.charCode);
-        if (/^[A-Za-z\s]$/i.test(key) === false) evt.preventDefault();
+        if (/^[a-z\s]$/i.test(key) === false) evt.preventDefault();
     })
 });
 
@@ -58,9 +58,6 @@ b4w.register("B00107064_Avatar_Project_main", function(exports, require) {
     var m_data = require("data");
     var m_preloader = require("preloader");
     var m_ver = require("version");
-
-    // var m_cam = require("camera");
-    // var m_trans = require("transform");
 
     var m_anim = require("animation");
     var m_cont = require("container");
@@ -161,7 +158,7 @@ b4w.register("B00107064_Avatar_Project_main", function(exports, require) {
                 return;
             }
             // Sets the input field to the selected button
-            document.getElementById("selection").value = "Letter " + event.target.id;
+            document.getElementById("selection").value = "Letter " + (event.target.id).toUpperCase();
         });
 
         // Event Listener for input buttons

@@ -6,28 +6,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>B00107064 Avatar Project</title>
+
     <!-- As a heading -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class="navbar-brand" href="#">Irish Sign Language Avatar Translation</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Irish Sign Language Avatar Translation</a>
         <div class="collapse navbar-collapse" id="navbarNav">
             <div class="navbar-nav nav-fill w-100">
                 <ul class="navbar-nav nav-fill w-100">
-                    <li class="nav-item"><a class="defaultNavItem nav-link" href="#category0">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#category1">Alphabet</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#category2">Family</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#category3">Conversation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#category4">Manual Input</a></li>
+                    <li class="nav-item">
+                        <a class="defaultNavItem nav-link" href="#category0">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#category1">Alphabet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#category2">Family</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#category3">Conversation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#category4">Sequence of Signs</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
-    <link type="text/css" rel="stylesheet" href="B00107064_Avatar_Project.min.css?v=18042021164411">
+
+    <link rel="stylesheet" href="B00107064_Avatar_Project.css" type="text/css">
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./b4w.simple.min.js?v=18042021164411"></script>
-    <script type="text/javascript" src="B00107064_Avatar_Project.min.js?v=18042021164411"></script>
+
+    <script type="text/javascript" src="..\..\dist\b4w.js"></script>
+
+    <script type="text/javascript" src="B00107064_Avatar_Project.js"></script>
 </head>
 
 <body>
@@ -36,10 +53,11 @@
             <div class="justify-content-center col-md-6 box">
                 <div id="category0" class="group">
                     <div class="container">
-                        <h1>Welcome!</h1><dt>Please try the following tasks:</dt>
+                        <h1>Welcome!</h1>
+                        <dt>Please try the following tasks:</dt>
                         <ul>
                             <li>
-                                <dd>Sign any available letter</dd>
+                                <dd>Sign the letter "C"</dd>
                             </li>
                             <li>
                                 <dd>Sign "Father" with Left Hand</dd>
@@ -48,23 +66,19 @@
                                 <dd>Sign "Thanks" with Right hand</dd>
                             </li>
                             <li>
-                                <dd>Sign "Hi Dad" using input manual</dd>
+                                <dd>Sign the sequence "Hi Dad"</dd>
                             </li>
                             <li>
-                                <dd>Input "Sorry Mom" within input manual</dd>
+                                <dd>Sign the sequence "Sorry Mom"</dd>
                             </li>
                             <li>
-                                <dd>Spell "B E A C H" within input manual (Spaces sensitive)</dd>
+                                <dd>Sign the sequence of letters "B E A C H"</dd>
                             </li>
                             <li>
-                                <dd>Explore site further</dd>
+                                <dd>Explore site further and answer a few questions as feedback <a href="https://www.surveymonkey.com/r/STKS8L2" target="_blank">here</a></dd>
                             </li>
-                            <li>
-                                <dd>Answer a few questions as feedback</dd>
-                            </li>
-                        </ul><dt>Notes:</dt>
-                        <dd>Input manual letter sequences require space intervals.</dd>
-                        <dd>Camera controls are active during input field typing.</dd><dt>Scene interactable with mouse as well as the following keypresses:</dt>
+                        </ul>
+                        <dt>Use the mouse or following keys to change the view of the avatar:</dt>
                         <dd><b>P - </b>Pause/Resume Avatar</dd>
                         <dd><b>W/S - </b>Zoom camera controls</dd>
                         <dd><b>A/D - </b>Horizontal camera controls</dd>
@@ -74,37 +88,38 @@
                 </div>
                 <div id="category1" class="group">
                     <div id='letters' class="letters">
-                        <button id="A" class="btn btn-dark btn-lg">A</button>
-                        <button id="B" class="btn btn-dark btn-lg">B</button>
-                        <button id="C" class="btn btn-dark btn-lg">C</button>
-                        <button id="D" class="btn btn-dark btn-lg">D</button>
-                        <button id="E" class="btn btn-dark btn-lg">E</button>
-                        <button id="F" class="btn btn-secondary btn-lg">F</button>
-                        <button id="G" class="btn btn-secondary btn-lg">G</button><br><br>
-                        <button id="H" class="btn btn-dark btn-lg">H</button>
-                        <button id="I" class="btn btn-dark btn-lg">I</button>
-                        <button id="J" class="btn btn-secondary btn-lg">J</button>
-                        <button id="K" class="btn btn-secondary btn-lg">K</button>
-                        <button id="L" class="btn btn-secondary btn-lg">L</button>
-                        <button id="M" class="btn btn-secondary btn-lg">M</button>
-                        <button id="N" class="btn btn-secondary btn-lg">N</button><br><br>
-                        <button id="O" class="btn btn-secondary btn-lg">O</button>
-                        <button id="P" class="btn btn-secondary btn-lg">P</button>
-                        <button id="Q" class="btn btn-secondary btn-lg">Q</button>
-                        <button id="R" class="btn btn-secondary btn-lg">R</button>
-                        <button id="S" class="btn btn-secondary btn-lg">S</button>
-                        <button id="T" class="btn btn-secondary btn-lg">T</button><br><br>
-                        <button id="U" class="btn btn-secondary btn-lg">U</button>
-                        <button id="V" class="btn btn-secondary btn-lg">V</button>
-                        <button id="W" class="btn btn-secondary btn-lg">W</button>
-                        <button id="X" class="btn btn-secondary btn-lg">X</button>
-                        <button id="Y" class="btn btn-secondary btn-lg">Y</button>
-                        <button id="Z" class="btn btn-secondary btn-lg">Z</button><br><br>
+                        <button id="a" class="btn btn-dark btn-lg">A</button>
+                        <button id="b" class="btn btn-dark btn-lg">B</button>
+                        <button id="c" class="btn btn-dark btn-lg">C</button>
+                        <button id="d" class="btn btn-dark btn-lg">D</button>
+                        <button id="e" class="btn btn-dark btn-lg">E</button>
+                        <button id="f" class="btn btn-secondary btn-lg">F</button>
+                        <button id="g" class="btn btn-secondary btn-lg">G</button><br><br>
+                        <button id="h" class="btn btn-dark btn-lg">H</button>
+                        <button id="i" class="btn btn-dark btn-lg">I</button>
+                        <button id="j" class="btn btn-secondary btn-lg">J</button>
+                        <button id="k" class="btn btn-secondary btn-lg">K</button>
+                        <button id="l" class="btn btn-secondary btn-lg">L</button>
+                        <button id="m" class="btn btn-secondary btn-lg">M</button>
+                        <button id="n" class="btn btn-secondary btn-lg">N</button><br><br>
+                        <button id="o" class="btn btn-secondary btn-lg">O</button>
+                        <button id="p" class="btn btn-secondary btn-lg">P</button>
+                        <button id="q" class="btn btn-secondary btn-lg">Q</button>
+                        <button id="r" class="btn btn-secondary btn-lg">R</button>
+                        <button id="s" class="btn btn-secondary btn-lg">S</button>
+                        <button id="t" class="btn btn-secondary btn-lg">T</button><br><br>
+                        <button id="u" class="btn btn-secondary btn-lg">U</button>
+                        <button id="v" class="btn btn-secondary btn-lg">V</button>
+                        <button id="w" class="btn btn-secondary btn-lg">W</button>
+                        <button id="x" class="btn btn-secondary btn-lg">X</button>
+                        <button id="y" class="btn btn-secondary btn-lg">Y</button>
+                        <button id="z" class="btn btn-secondary btn-lg">Z</button><br><br>
                     </div>
                 </div>
                 <div id="category2" class="group text-center">
                     <button id="button_Father" class="btn btn-dark btn-block btn-lg">Father</button><br>
-                    <button id="button_Mother" class="btn btn-dark btn-block btn-lg">Mother</button><br></div>
+                    <button id="button_Mother" class="btn btn-dark btn-block btn-lg">Mother</button><br>
+                </div>
                 <div id="category3" class="group">
                     <button id="button_Hello" class="btn btn-dark btn-block btn-lg">Hello</button><br>
                     <button id="button_Please" class="btn btn-dark btn-block btn-lg">Please</button><br>
@@ -113,37 +128,38 @@
                 </div>
                 <div id="category4" class="group">
                     <div id='letters2' class="letters2">
-                        <button id="A" class="btn btn-dark btn-lg">A</button>
-                        <button id="B" class="btn btn-dark btn-lg">B</button>
-                        <button id="C" class="btn btn-dark btn-lg">C</button>
-                        <button id="D" class="btn btn-dark btn-lg">D</button>
-                        <button id="E" class="btn btn-dark btn-lg">E</button>
-                        <button id="F" class="btn btn-secondary btn-lg">F</button>
-                        <button id="G" class="btn btn-secondary btn-lg">G</button><br><br>
-                        <button id="H" class="btn btn-dark btn-lg">H</button>
-                        <button id="I" class="btn btn-dark btn-lg">I</button>
-                        <button id="J" class="btn btn-secondary btn-lg">J</button>
-                        <button id="K" class="btn btn-secondary btn-lg">K</button>
-                        <button id="L" class="btn btn-secondary btn-lg">L</button>
-                        <button id="M" class="btn btn-secondary btn-lg">M</button>
-                        <button id="N" class="btn btn-secondary btn-lg">N</button><br><br>
-                        <button id="O" class="btn btn-secondary btn-lg">O</button>
-                        <button id="P" class="btn btn-secondary btn-lg">P</button>
-                        <button id="Q" class="btn btn-secondary btn-lg">Q</button>
-                        <button id="R" class="btn btn-secondary btn-lg">R</button>
-                        <button id="S" class="btn btn-secondary btn-lg">S</button>
-                        <button id="T" class="btn btn-secondary btn-lg">T</button><br><br>
-                        <button id="U" class="btn btn-secondary btn-lg">U</button>
-                        <button id="V" class="btn btn-secondary btn-lg">V</button>
-                        <button id="W" class="btn btn-secondary btn-lg">W</button>
-                        <button id="X" class="btn btn-secondary btn-lg">X</button>
-                        <button id="Y" class="btn btn-secondary btn-lg">Y</button>
-                        <button id="Z" class="btn btn-secondary btn-lg">Z</button><br><br>
-                        <div class="input-field input-group-prepend input-group-lg justify-content-center" style="padding-bottom: 3%">
-                            <button id=" " class="btn btn-dark btn-lg btn-block" type="button">Spacebar</button>
+                        <button id="a" class="btn btn-dark btn-lg">A</button>
+                        <button id="b" class="btn btn-dark btn-lg">B</button>
+                        <button id="c" class="btn btn-dark btn-lg">C</button>
+                        <button id="d" class="btn btn-dark btn-lg">D</button>
+                        <button id="e" class="btn btn-dark btn-lg">E</button>
+                        <button id="f" class="btn btn-secondary btn-lg">F</button>
+                        <button id="g" class="btn btn-secondary btn-lg">G</button><br><br>
+                        <button id="h" class="btn btn-dark btn-lg">H</button>
+                        <button id="i" class="btn btn-dark btn-lg">I</button>
+                        <button id="j" class="btn btn-secondary btn-lg">J</button>
+                        <button id="k" class="btn btn-secondary btn-lg">K</button>
+                        <button id="l" class="btn btn-secondary btn-lg">L</button>
+                        <button id="m" class="btn btn-secondary btn-lg">M</button>
+                        <button id="n" class="btn btn-secondary btn-lg">N</button><br><br>
+                        <button id="o" class="btn btn-secondary btn-lg">O</button>
+                        <button id="p" class="btn btn-secondary btn-lg">P</button>
+                        <button id="q" class="btn btn-secondary btn-lg">Q</button>
+                        <button id="r" class="btn btn-secondary btn-lg">R</button>
+                        <button id="s" class="btn btn-secondary btn-lg">S</button>
+                        <button id="t" class="btn btn-secondary btn-lg">T</button><br><br>
+                        <button id="u" class="btn btn-secondary btn-lg">U</button>
+                        <button id="v" class="btn btn-secondary btn-lg">V</button>
+                        <button id="w" class="btn btn-secondary btn-lg">W</button>
+                        <button id="x" class="btn btn-secondary btn-lg">X</button>
+                        <button id="y" class="btn btn-secondary btn-lg">Y</button>
+                        <button id="z" class="btn btn-secondary btn-lg">Z</button><br><br>
+                        <div class="input-field input-group-prepend input-group-lg justify-content-center">
+                            <button id=" " class="btn btn-dark btn-lg btn-block" type="button">Space</button>
                         </div>
+                        <p>Letter sequences require space intervals</p>
                     </div>
-                    <div class="justify-content-center">
+                    <div class="justify-content-center" style="padding-top: 1%">
                         <div class="input-field input-group mb-3">
                             <input type="text" id="input" name="input" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" maxlength="30" ng-trim="true">
                             <div class="input-group-prepend input-group-lg">
@@ -154,10 +170,10 @@
                             <button class="btn btn-dark  btn-block" id="button_Input" type="button">Process</button>
                         </div>
                         <div class="input-field input-group mb-3">
+                            <input type="text" id="play" class="form-control text-center" placeholder="Select or type letters above" readonly>
                             <div class="input-group-prepend input-group-lg">
                                 <button class="btn btn-dark" id="button_Play" type="button"><i class="fa fa-play"></i></button>
                             </div>
-                            <input type="text" id="play" class="form-control text-center" placeholder="Select or type letters above" readonly>
                         </div>
                     </div>
                 </div>
@@ -177,6 +193,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
